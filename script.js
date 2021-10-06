@@ -1,33 +1,24 @@
-let question = confirm('Ваш язык русский?');
-let lang;
+"use strict";
 
-if (question){
-    lang = 'ru';
-} else {
-    lang = 'en';
-}
+// Усложнённое задание №1
+const difficultTask1 = function() {
 
-let num = {ru: ['Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье'],
-           en: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-          };
-console.log(num[lang]);
+let checkNumber;
 
-if (lang =='ru') {
-    console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
-} else {
-    console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
-}
-switch (true) {
-    case lang =='ru':
-        console.log('Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота', 'Воскресенье');
-        break;
-    case lang =='en':
-        console.log('Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday');
-        break;
-}
+const isNumber = function(num) {
+    return !isNaN(parseFloat(num)) && isFinite(num);
+};
 
-let namePerson = prompt("Введите своё имя");
+do {
+    checkNumber = prompt('Введите число');
+} while (!isNumber(checkNumber));
 
-(namePerson == 'Артём') ? console.log('директор') : 
-    (namePerson == 'Александр') ?  console.log('преподаватель') : console.log('студент');
-                        
+checkNumber = +checkNumber.toString().trim();
+console.log(typeof checkNumber, checkNumber);
+
+};
+
+difficultTask1();
+
+
+//Усложнённое задание №2
