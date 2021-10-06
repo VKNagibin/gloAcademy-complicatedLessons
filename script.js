@@ -1,6 +1,5 @@
 "use strict";
 
-// Усложнённое задание №1
 const difficultTask1 = function() {
 
 let checkNumber;
@@ -20,5 +19,3 @@ console.log(typeof checkNumber, checkNumber);
 
 difficultTask1();
 
-
-//Усложнённое задание №2
