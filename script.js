@@ -37,6 +37,16 @@ const getCurrSeconds = function() {
     }
 };
 
+const oneNumber = function(num) {
+
+    if (num.toString().length == 1) {
+        return '0' + num;
+    } else {
+        return num;
+    }
+
+};
+
 setInterval(function() {
 
     let dateString = `<div style='text-align: center'>
@@ -55,18 +65,3 @@ setInterval(function() {
 
                   
 }, 1000);
-
-
-const oneNumber = function(num) {
-
-    if (num.toString().length == 1) {
-        return '0' + num;
-    } else {
-        return num;
-    }
-
-};
-
-
-
-
